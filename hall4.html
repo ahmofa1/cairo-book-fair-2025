@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hall 4</title>
+  <style>
+    body {
+      background-color: rgb(196, 214, 248);
+    }
+    h1 {
+      font-family: "Alexandria", serif;
+      font-optical-sizing: auto;
+      font-size: 128px;
+      font-weight: 800;
+      font-style: normal;
+      text-align: center;
+    }
+    img {
+      border: 20px solid navy;
+      height: 800px;
+      width: 800px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.25);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .modal img {
+      width: 90%;
+      max-width: 1000px;
+      border: 10px solid navy;
+      box-shadow: 0 15px 30px rgba(255, 255, 255, 0.5);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 40px;
+      color: white;
+      cursor: pointer;
+    }
+
+    h2 {
+      font-family: "Alexandria", serif;
+      font-optical-sizing: auto;
+      font-size: 100px;
+      font-weight: 800;
+      font-style: normal;
+      text-align: center;
+      color: brown;
+    }
+    #enlarge {
+      color: rgb(255, 166, 0);
+    }
+    p {
+      font-family: "Alexandria", serif;
+      font-optical-sizing: auto;
+      font-size: 50px;
+      font-weight: 500;
+      font-style: normal;
+      text-align: center;
+    }
+    .column {
+      padding: 5px;
+      margin: 30px;
+    }
+    .row {
+      display: flex;
+      gap: 10px;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+  <h1>Hall 4 Publishers and Books</h1>
+  <h2>Section (A)</h2>
+  <h2 id="enlarge">[ Click on any image to enlarge it ]</h2>
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img
+        src="./hall4/h4-a02-01.jpg"
+        alt="A1"
+        style="width: 100%"
+      />
+      <p>
+        دار التقوى
+        <br />
+        جناح (A2)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h4-a02-02.jpg"
+        alt="A2"
+        style="width: 100%"
+      />
+      <p>
+        تاريخ الجبرتي
+        <br />
+        دار التقوى
+        <br />
+        جناح (A2)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h4-a02-03.jpg"
+        alt="A3"
+        style="width: 100%"
+      />
+      <p>
+        التاريخ الإسلامي من
+        <br />
+        الخلافة الراشدة حتى العصر الحديث
+        <br />
+        دار التقوى
+        <br />
+        جناح (A2)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h4-a23-01.jpg"
+        alt="A2"
+        style="width: 100%"
+      />
+      <p>
+        مؤسسة الفرقان
+        <br />
+        جناح (A23)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h4-a39-01.jpg"
+        alt="A3"
+        style="width: 100%"
+      />
+      <p>
+        سيرة عمر بن الخطاب
+        <br />
+        دار ابن الجوزي
+        <br />
+        جناح (A39)
+      </p>
+    </div>
+  </div>
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img
+        src="./hall4/h4-a39-02.jpg"
+        alt="A1"
+        style="width: 100%"
+      />
+      <p>
+        سيرة عثمان بن عفان
+        <br />
+        دار ابن الجوزي
+        <br />
+        جناح (A39)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h4-a39-03.jpg"
+        alt="A2"
+        style="width: 100%"
+      />
+      <p>
+        سيرة علي بن ابي طالب
+        <br />
+        دار ابن الجوزي
+        <br />
+        جناح (A39)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h4-a39-04.jpg"
+        alt="A3"
+        style="width: 100%"
+      />
+      <p>
+        سيرة ابي بكر الصديق
+        <br />
+        دار ابن الجوزي
+        <br />
+        جناح (A39)
+      </p>
+    </div>
+  </div>
+  <h2>Section (B)</h2>
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img
+        src="./hall4/h04-b06-1.jpg"
+        alt="A2"
+        style="width: 100%"
+      />
+      <p>
+        الوجود التاريخي للأنبياء
+        <br />
+        مركز رواسخ
+        <br />
+        جناح (B6)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-b16-01.jpg"
+        alt="A3"
+        style="width: 100%"
+      />
+      <p>
+        العصرية للنشر والتوزيع
+        <br />
+        جناح (B16)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-b16-02.jpg"
+        alt="A2"
+        style="width: 100%"
+      />
+      <p>
+        مؤلفات نبيل سعيد
+        <br />
+        العصرية للنشر والتوزيع
+        <br />
+        جناح (B16)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-b26-01.jpg"
+        alt="A3"
+        style="width: 100%"
+      />
+      <p>
+        السيرة النبوية
+        <br />
+        دار الآثار
+        <br />
+        جناح (B26)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-b26-02.jpg"
+        alt="A1"
+        style="width: 100%"
+      />
+      <p>
+        الفروسية المحمدية
+        <br />
+        دار الآثار
+        <br />
+        جناح (B26)
+      </p>
+    </div>
+  </div>
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img
+        src="./hall4/h04-b26-03.jpg"
+        alt="A2"
+        style="width: 100%"
+      />
+      <p>
+        الموطأ
+        <br />
+        دار الآثار
+        <br />
+        جناح (B26)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-b26-04.jpg"
+        alt="A3"
+        style="width: 100%"
+      />
+      <p>
+        رياض الصالحين
+        <br />
+        دار الآثار
+        <br />
+        جناح (B26)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-b26-05.jpg"
+        alt="A2"
+        style="width: 100%"
+      />
+      <p>
+        منهاج القاصدين ومفيد الصادقين
+        <br />
+        دار الآثار
+        <br />
+        جناح (B26)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-b40-01.jpg"
+        alt="A3"
+        style="width: 100%"
+      />
+      <p>
+        اسئلة حيرة علماء
+        <br />
+        الشيعة في الإمامة
+        <br />
+        دار اللؤلؤة
+        <br />
+        جناح (B40)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-b40-02.jpg"
+        alt="A1"
+        style="width: 100%"
+      />
+      <p>
+        موسوعة قصص الأنبياء
+        <br />
+        دار اللؤلؤة
+        <br />
+        جناح (B40)
+      </p>
+    </div>
+  </div>
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img
+        src="./hall4/h04-b40-03.jpg"
+        alt="A2"
+        style="width: 100%"
+      />
+      <p>
+        الجامع الصحيح لآثار الصحابة
+        <br />
+        دار اللؤلؤة
+        <br />
+        جناح (B40)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-b40-04.jpg"
+        alt="A3"
+        style="width: 100%"
+      />
+      <p>
+        مخاطر تغيير وضع القدس
+        <br />
+        دار اللؤلؤة
+        <br />
+        جناح (B40)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-b40-05.jpg"
+        alt="A2"
+        style="width: 100%"
+      />
+      <p>
+        قيم التعامل مع المحاربين
+        <br />
+        في المغازي النبوية
+        <br />
+        دار اللؤلؤة
+        <br />
+        جناح (B40)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-b40-06.jpg"
+        alt="A3"
+        style="width: 100%"
+      />
+      <p>
+        خصائص المجتمع المصري
+        <br />
+        دار اللؤلؤة
+        <br />
+        جناح (B40)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-b40-07.jpg"
+        alt="A1"
+        style="width: 100%"
+      />
+      <p>
+        الجرح والتعديل
+        <br />
+        دار اللؤلؤة
+        <br />
+        جناح (B40)
+      </p>
+    </div>
+  </div>
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img
+        src="./hall4/h04-b40-08.jpg"
+        alt="A2"
+        style="width: 100%"
+      />
+      <p>
+        لقط الدرر والماس من حديث
+        <br />
+        أمرت أن أقاتل الناس
+        <br />
+        دار اللؤلؤة
+        <br />
+        جناح (B40)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-b40-09.jpg"
+        alt="A3"
+        style="width: 100%"
+      />
+      <p>
+        الدعوة إلى الله في أقطار مختلفة
+        <br />
+        دار اللؤلؤة
+        <br />
+        جناح (B40)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-b40-10.jpg"
+        alt="A2"
+        style="width: 100%"
+      />
+      <p>
+        مدنية المسلمين في إسبانيا
+        <br />
+        دار اللؤلؤة
+        <br />
+        جناح (B40)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-b40-11.jpg"
+        alt="A3"
+        style="width: 100%"
+      />
+      <p>
+        المشروع الهندسي حلاله وحرامه
+        <br />
+        دار اللؤلؤة
+        <br />
+        جناح (B40)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-b40-12.jpg"
+        alt="A1"
+        style="width: 100%"
+      />
+      <p>
+        الصحيح المخنصر من سيرة خير البشر
+        <br />
+        دار اللؤلؤة
+        <br />
+        جناح (B40)
+      </p>
+    </div>
+  </div>
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img
+        src="./hall4/h04-b40-13.jpg"
+        alt="A2"
+        style="width: 100%"
+      />
+      <p>
+        الاصول الوثنية للشيعة الاثني عشرية
+        <br />
+        دار اللؤلؤة
+        <br />
+        جناح (B40)
+      </p>
+    </div>
+  </div>
+  <h2>Section (C)</h2>
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img
+        src="./hall4/h04-c01-01.jpg"
+        alt="A1"
+        style="width: 100%"
+      />
+      <p>
+        حقبة من التاريخ
+        <br />
+        الدار العالمية جناح (C1)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-c34-02.jpg"
+        alt="A2"
+        style="width: 100%"
+      />
+      <p>
+        الموسوعة الميسرة في التاريخ الإسلامي
+        <br />
+        مؤسسة إبداع
+        <br />
+        جناح (C34)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-c34-03.jpg"
+        alt="A3"
+        style="width: 100%"
+      />
+      <p>
+        حياة الصحابة
+        <br />
+        مؤسسة إبداع
+        <br />
+        جناح (C34)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-c52-01.jpg"
+        alt="A2"
+        style="width: 100%"
+      />
+      <p>
+        السلاطبن الاوائل
+        <br />
+        عصر تأسيس الدولة العثمانية
+        <br />
+        Buruj Books
+        <br />
+        جناح (C52)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-c52-02.jpg"
+        alt="A3"
+        style="width: 100%"
+      />
+      <p>
+        الخط الحديدي للحجاز
+        <br />
+        Buruj Books
+        <br />
+        جناح (C52)
+      </p>
+    </div>
+  </div>
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img
+        src="./hall4/h04-c52-03.jpg"
+        alt="A1"
+        style="width: 100%"
+      />
+      <p>
+        حلماً كان واقعاً صار
+        <br />
+        قصة مؤسس الدولة العثمانية
+        <br />
+        Buruj Books
+        <br />
+        جناح (C52)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-c52-04.jpg"
+        alt="A2"
+        style="width: 100%"
+      />
+      <p>
+        بصمات خالدة في التاريخ العثماني
+        <br />
+        Buruj Books
+        <br />
+        جناح (C52)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-c52-05.jpg"
+        alt="A3"
+        style="width: 100%"
+      />
+      <p>
+        ذكريات السلطان عبد الحميد الثاني
+        <br />
+        Buruj Books
+        <br />
+        جناح (C52)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-c52-06.jpg"
+        alt="A2"
+        style="width: 100%"
+      />
+      <p>
+        السلطان عبد محمد الفاتح
+        <br />
+        Buruj Books
+        <br />
+        جناح (C52)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-c52-07.jpg"
+        alt="A3"
+        style="width: 100%"
+      />
+      <p>
+        السلطان عبد الحميد الثاني
+        <br />
+        Buruj Books
+        <br />
+        جناح (C52)
+      </p>
+    </div>
+  </div>
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img
+        src="./hall4/h04-c52-08.jpg"
+        alt="A1"
+        style="width: 100%"
+      />
+      <p>
+        سلاطين الدولة العثمانية
+        <br />
+        Buruj Books
+        <br />
+        جناح (C52)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-c52-09.jpg"
+        alt="A2"
+        style="width: 100%"
+      />
+      <p>
+        السلطان سليم الأول
+        <br />
+        Buruj Books
+        <br />
+        جناح (C52)
+      </p>
+    </div>
+    <div class="column">
+      <img
+        src="./hall4/h04-c52-10.jpg"
+        alt="A3"
+        style="width: 100%"
+      />
+      <p>
+        سليمان القانوني
+        <br />
+        Buruj Books
+        <br />
+        جناح (C52)
+      </p>
+    </div>
+  </div>
+  <div class="modal" id="imageModal">
+    <span class="modal-close" id="modalClose">&times;</span>
+    <img id="modalImage" src="" alt="Enlarged" />
+  </div>
+
+  <script>
+    // Get modal elements
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    const modalClose = document.getElementById("modalClose");
+
+    // Add click event listener to all images
+    document.querySelectorAll("img").forEach((img) => {
+      img.addEventListener("click", () => {
+        modal.style.display = "flex";
+        modalImage.src = img.src;
+        modalImage.alt = img.alt;
+      });
+    });
+
+    // Close modal on close button click
+    modalClose.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    // Close modal on outside click
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  </script>
+</body>

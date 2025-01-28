@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hall 2</title>
+  <style>
+    body {
+      background-color: rgb(196, 214, 248);
+    }
+    h1 {
+      font-family: "Alexandria", serif;
+      font-optical-sizing: auto;
+      font-size: 128px;
+      font-weight: 800;
+      font-style: normal;
+      text-align: center;
+    }
+    img {
+      border: 20px solid navy;
+      height: 800px;
+      width: 800px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.25);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .modal img {
+      width: 90%;
+      max-width: 1000px;
+      border: 10px solid navy;
+      box-shadow: 0 15px 30px rgba(255, 255, 255, 0.5);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 40px;
+      color: white;
+      cursor: pointer;
+    }
+
+    h2 {
+      font-family: "Alexandria", serif;
+      font-optical-sizing: auto;
+      font-size: 100px;
+      font-weight: 800;
+      font-style: normal;
+      text-align: center;
+      color: brown;
+    }
+    #enlarge {
+      color: rgb(255, 166, 0);
+    }
+    p {
+      font-family: "Alexandria", serif;
+      font-optical-sizing: auto;
+      font-size: 50px;
+      font-weight: 500;
+      font-style: normal;
+      text-align: center;
+    }
+    .column {
+      padding: 5px;
+      margin: 30px;
+    }
+    .row {
+      display: flex;
+      gap: 10px;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+  <h1>Hall 2 Publishers and Books</h1>
+  <h2>Section (A)</h2>
+  <h2 id="enlarge">[ Click on any image to enlarge it ]</h2>
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img src="./hall2/h2-a8-1.jpg" alt="A1" style="width: 100%" />
+      <p>
+        دار العين
+        <br />
+        جناح (A8)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-a8-2.jpg" alt="A2" style="width: 100%" />
+      <p>
+        دار العين
+        <br />
+        جناح (A8)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-a8-3.jpg" alt="A3" style="width: 100%" />
+      <p>
+        دار العين
+        <br />
+        جناح (A8)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-a8-4.jpg" alt="A2" style="width: 100%" />
+      <p>
+        دار العين
+        <br />
+        جناح (A8)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-a18-1.jpg" alt="A3" style="width: 100%" />
+      <p>
+        المجتمع الاوروبي في العصور الوسطى
+        <br />
+        عالم الثقافة للنشر والتوزيع
+        <br />
+        جناح (A18)
+      </p>
+    </div>
+  </div>
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img src="./hall2/h4-c29&h2-a21-1.jpg" alt="A3" style="width: 100%" />
+      <p>
+        تاريخ الخلفاء الراشدين
+        <br />
+        التقوى ناشرون
+        <br />
+        جناح (A21)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h4-c29&h2-a21-2.jpg" alt="A2" style="width: 100%" />
+      <p>
+        التقوى ناشرون
+        <br />
+        جناح (A21)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-a30-1.jpg" alt="A1" style="width: 100%" />
+      <p>
+        مؤسسة هنداوي
+        <br />
+        جناح (A30)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-a41-1.jpg" alt="A2" style="width: 100%" />
+      <p>
+        اوروبا المظلمة
+        <br />
+        دارالفنار
+        <br />
+        جناح (A41)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-a53.jpg" alt="A2" style="width: 100%" />
+      <p>
+        دارالمحرر
+        <br />
+        جناح (A53)
+      </p>
+    </div>
+  </div>
+  <h2>Section (B)</h2>
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img src="./hall2/h2-b7-1.jpg" alt="B1" style="width: 100%" />
+      <p>
+        دار تمهيد
+        <br />
+        جناح (B7)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b7-2.jpg" alt="B2" style="width: 100%" />
+      <p>
+        دار تمهيد
+        <br />
+        جناح (B7)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b7-3.jpg" alt="B3" style="width: 100%" />
+      <p>
+        دار تمهيد
+        <br />
+        جناح (B7)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b7-4.jpg" alt="B2" style="width: 100%" />
+      <p>
+        دار تمهيد
+        <br />
+        جناح (B7)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b7-5.jpg" alt="B3" style="width: 100%" />
+      <p>
+        دار تمهيد
+        <br />
+        جناح (B7)
+      </p>
+    </div>
+  </div>
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img src="./hall2/h2-b7-6.jpg" alt="B1" style="width: 100%" />
+      <p>
+        دار تمهيد
+        <br />
+        جناح (B7)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b9-1.jpg" alt="B2" style="width: 100%" />
+      <p>
+        تحقيق مواقف الصحابة
+        <br />
+        دار السلام
+        <br />
+        جناح (B9)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b9-2.jpg" alt="B3" style="width: 100%" />
+      <p>
+        أطلس الفتوحات الإسلامية
+        <br />
+        دار السلام
+        <br />
+        جناح (B9)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b12-1.jpg" alt="B2" style="width: 100%" />
+      <p>
+        معارك فاصلة في <br />
+        التاريخ الإسلامي
+        <br />
+        المكتبة العربية <br />
+        للنشر والتوزيع
+        <br />
+        جناح (B12)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b12-2.jpg" alt="B3" style="width: 100%" />
+      <p>
+        مختصر الخلافة الإسلامية
+        <br />
+        المكتبة العربية <br />
+        للنشر والتوزيع
+        <br />
+        جناح (B12)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h4-b13&h2-b25-1.jpg" alt="B3" style="width: 100%" />
+      <p>
+        صحابة صنعو التاريخ <br />
+        ونسيتهم الأمة
+        <br />
+        تبصير للنشر والتوزيع
+        <br />
+        جناح (B25)
+      </p>
+    </div>
+  </div>
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img src="./hall2/h4-b13&h2-b25-2.jpg" alt="B1" style="width: 100%" />
+      <p>
+        اسس اختيار الرواة
+        <br />
+        عند الإمام البخاري
+        <br />
+        تبصير للنشر والتوزيع
+        <br />
+        جناح (B25)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h4-b13&h2-b25-3.jpg" alt="B2" style="width: 100%" />
+      <p>
+        مهد العرب
+        <br />
+        تبصير للنشر والتوزيع
+        <br />
+        جناح (B25)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h4-b13&h2-b25-5.jpg" alt="B3" style="width: 100%" />
+      <p>
+        لأنه النبي
+        <br />
+        تبصير للنشر والتوزيع
+        <br />
+        جناح (B25)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h4-b13&h2-b25-6.jpg" alt="B2" style="width: 100%" />
+      <p>
+        لماذا تأخر المسلمون؟
+        <br />
+        ولماذا تقدم غيرهم
+        <br />
+        تبصير للنشر والتوزيع
+        <br />
+        جناح (B25)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h4-b13&h2-b25-7.jpg" alt="B3" style="width: 100%" />
+      <p>
+        بداية النهاية واحداث الاخرة
+        <br />
+        تبصير للنشر والتوزيع
+        <br />
+        جناح (B25)
+      </p>
+    </div>
+  </div>
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img src="./hall2/h4-b13&h2-b25-9.jpg" alt="B1" style="width: 100%" />
+      <p>
+        الدرر الثمين في مناقب
+        <br />
+        المسلمين ومثالب المشركين
+        <br />
+        تبصير للنشر والتوزيع
+        <br />
+        جناح (B25)
+      </p>
+    </div>
+  </div>
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img src="./hall2/h2-b26-1.jpg" alt="B1" style="width: 100%" />
+      <p>
+        دار الفاروق
+        <br />
+        جناح (B26)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b26-2.jpg" alt="B2" style="width: 100%" />
+      <p>
+        دار الفاروق
+        <br />
+        جناح (B26)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b26-3.jpg" alt="B3" style="width: 100%" />
+      <p>
+        دار الفاروق
+        <br />
+        جناح (B26)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b26-4.jpg" alt="B2" style="width: 100%" />
+      <p>
+        دار الفاروق
+        <br />
+        جناح (B26)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b27-1.jpg" alt="B3" style="width: 100%" />
+      <p>
+        رجال صنعو التاريخ
+        <br />
+        (التاريخ الأندلسي)
+        <br />
+        كتوبيا
+        <br />
+        جناح (B27)
+      </p>
+    </div>
+  </div>
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img src="./hall2/h2-b27-2.jpg" alt="B1" style="width: 100%" />
+      <p>
+        يوسف بن تاشفين
+        <br />
+        كتوبيا
+        <br />
+        جناح (B27)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b30-1.jpg" alt="B2" style="width: 100%" />
+      <p>
+        أروقة دولة بني العباس
+        <br />
+        دارك للنشر والتوزيع
+        <br />
+        جناح (B30)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b40-1.jpg" alt="B3" style="width: 100%" />
+      <p>
+        مقدمة ابن خلدون
+        <br />
+        مسافات للنشر والتوزيع
+        <br />
+        جناح (B40)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b40-2.jpg" alt="B2" style="width: 100%" />
+      <p>
+        الأمير مسافات للنشر والتوزيع
+        <br />
+        جناح (B40)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b42-1.jpg" alt="B3" style="width: 100%" />
+      <p>
+        الرسول عالم الأدب للنشر والتوزيع
+        <br />
+        جناح (B42)
+      </p>
+    </div>
+  </div>
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img src="./hall2/h2-b42-2.jpg" alt="B1" style="width: 100%" />
+      <p>
+        عالم الأدب للنشر والتوزيع
+        <br />
+        جناح (B42)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b42-3.jpg" alt="B2" style="width: 100%" />
+      <p>
+        مثارات الغلط عند الغلاة <br />
+        في تضليل العلماء
+        <br />
+        عالم الأدب للنشر والتوزيع
+        <br />
+        جناح (B42)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b42-4.jpg" alt="B3" style="width: 100%" />
+      <p>
+        صلاح الدين الأيوبي وعصره
+        <br />
+        عالم الأدب للنشر والتوزيع
+        <br />
+        جناح (B42)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b42-5.jpg" alt="B2" style="width: 100%" />
+      <p>
+        المسلمون في مصر <br />
+        من الفتح الإسلامي حتى <br />
+        العصر الفاطمي
+        <br />
+        عالم الأدب للنشر والتوزيع
+        <br />
+        جناح (B42)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b42-6.jpg" alt="B3" style="width: 100%" />
+      <p>
+        المسلمون في العصر الأموي
+        <br />
+        عالم الأدب للنشر والتوزيع
+        <br />
+        جناح (B42)
+      </p>
+    </div>
+  </div>
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img src="./hall2/h2-b42-7.jpg" alt="B1" style="width: 100%" />
+      <p>
+        موسوعة غزوات <br />
+        النبي المصطفى
+        <br />
+        عالم الأدب للنشر والتوزيع
+        <br />
+        جناح (B42)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b42-8.jpg" alt="B2" style="width: 100%" />
+      <p>
+        المختصر اليسير في <br />
+        سيرة البشير النذير
+        <br />
+        عالم الأدب للنشر والتوزيع
+        <br />
+        جناح (B42)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b55-1.jpg" alt="B3" style="width: 100%" />
+      <p>
+        إسرائيل عبر التاريخ
+        <br />
+        دار البحر الأحمر
+        <br />
+        جناح (B55)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-b55-2.jpg" alt="B2" style="width: 100%" />
+      <p>
+        اليهودية واليهودية المسيحية
+        <br />
+        دار البحر الأحمر
+        <br />
+        جناح (B55)
+      </p>
+    </div>
+  </div>
+  <h2>Section (C)</h2>
+
+  <div class="row" style="display: flex; gap: 10px">
+    <div class="column">
+      <img src="./hall2/h2-c25-1.jpg" alt="C1" style="width: 100%" />
+      <p>
+        فاصلة للنشر والتوزيع
+        <br />
+        جناح (C25)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-c25-2.jpg" alt="C2" style="width: 100%" />
+      <p>
+        فاصلة للنشر والتوزيع
+        <br />
+        جناح (C25)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-c33-1.jpg" alt="C3" style="width: 100%" />
+      <p>
+        تاريخ الهند الغربية
+        <br />
+        المصري للنشر والتوزيع
+        <br />
+        جناح (C33)
+      </p>
+    </div>
+    <div class="column">
+      <img src="./hall2/h2-c42-1.jpg" alt="C3" style="width: 100%" />
+      <p>
+        سبع شداد
+        <br />
+        دار السراج
+        <br />
+        جناح (C42)
+      </p>
+    </div>
+  </div>
+  <div class="modal" id="imageModal">
+    <span class="modal-close" id="modalClose">&times;</span>
+    <img id="modalImage" src="" alt="Enlarged" />
+  </div>
+  <script>
+    // Get modal elements
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    const modalClose = document.getElementById("modalClose");
+
+    // Add click event listener to all images
+    document.querySelectorAll("img").forEach((img) => {
+      img.addEventListener("click", () => {
+        modal.style.display = "flex";
+        modalImage.src = img.src;
+        modalImage.alt = img.alt;
+      });
+    });
+
+    // Close modal on close button click
+    modalClose.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    // Close modal on outside click
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  </script>
+</body>
